@@ -1,0 +1,18 @@
+{
+ "_note": "DR4 day (2026-12-02 11:00 UTC or later): copy to compete/ogle182-dr4/job.json in that run, drop _note, set workdir to a folder of that run holding this repo's files.",
+ "name": "ogle182-dr4-v1",
+ "kind": "compete",
+ "workdir": "<run folder>/ogle182",
+ "image": "python:3.12",
+ "setup": ["pip install -r requirements.txt"],
+ "run": [
+  "python -m unittest -v test_ogle182",
+  "python job_dr4.py --data-dir /data --out-dir /out"
+ ],
+ "network": true,
+ "data_urls": [],
+ "data_key": "ogle182-gaia",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 60
+}
