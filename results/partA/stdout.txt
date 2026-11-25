@@ -1,0 +1,7 @@
+===== run-01-python: python -m unittest -v test_ogle182
+
+===== run-02-python: python job_virac.py --out-dir /out
+[23:33:08] VIRAC2 sources in the 60-arcsec box: 2017
+[23:33:08] comparison stars: 30
+[23:33:10] light-curve rows: 5757
+[23:33:10] VERDICT part A: K_PARTIAL
